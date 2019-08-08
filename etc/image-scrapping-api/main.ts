@@ -1,7 +1,9 @@
 import express, { Request, Response, NextFunction } from 'express';
 import { searchImages } from './scrapper.service';
+import cors from 'cors';
 
 const app = express();
+app.use(cors());
 
 app.get('/', (req: Request, res: Response, next: NextFunction) => {
     const keyword: string = req.query.keyword;
