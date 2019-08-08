@@ -44,3 +44,6 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+/etc/image-scrapping-api/node_modules/
+/etc/image-scrapping-api/dist/
